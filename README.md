@@ -9,7 +9,5 @@ FarmaSalud es un sistema para gestionar una farmacia de manera integral, incluye
 
 ## Tecnologías Utilizadas:
 - HTML5, CSS3 y JavaScript para el desarrollo del frontend.
-- Node.js y Express para el servidor backend.
-- MongoDB como sistema de base de datos.
-- Docker para la contenerización y despliegue de la aplicación.
+
 
