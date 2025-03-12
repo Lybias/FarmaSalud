@@ -1,0 +1,65 @@
+.contact-section * {
+    font-family: var(--font-family);
+
+}
+
+
+.contact-section .card {
+    border: none;
+    /* Elimina bordes predeterminados de Bootstrap */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    /* Sombra suave para las tarjetas */
+}
+
+.contact-section .btn-primary {
+    background-color: var(--fondo-boton);
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    
+}
+
+.contact-section .btn-primary:hover {
+    background-color: var(--fondo-boton-hover);
+}
+
+/* Personaliza los headers de las iframes de Google Maps */
+.contact-section .card-header {
+    background-color: #0bad1e;
+    /* Color oscuro para el header */
+    color: white;
+    padding: 10px 15px;
+    font-size: 18px;
+}
+
+/* Estilos para los inputs del formulario */
+.contact-section input[type="text"],
+.contact-section input[type="email"],
+.contact-section textarea {
+    border: 2px solid #ccc;
+    padding: 10px;
+    border-radius: 5px;
+    width: 100%;
+    /* Asegura que los inputs tomen todo el ancho disponible */
+}
+
+.contact-section textarea {
+    resize: none;
+    /* Evita que se pueda cambiar el tamaño */
+}
+
+/* Iframes */
+.card-header {
+    font-size: 1rem;
+    background-color: #333;
+    color: white;
+}
+
+/* Espaciado Responsivo */
+@media (max-width: 768px) {
+    .card {
+        margin-bottom: 1rem;
+    }
+}
+
