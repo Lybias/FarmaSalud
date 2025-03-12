@@ -1,4 +1,138 @@
 
+.titulo-principal {
+    text-align: center;
+    font-size: 2.5rem;
+    font-weight: bold;
+    margin-top: 20px;
+    }
+    .slogan {
+    text-align: center;
+    font-size: 1.2rem;
+    color: #6c757d; /* Color gris Bootstrap */
+    margin-bottom: 20px;
+    }
+   
+
+.carousel-inner img {
+  width: auto; 
+  height: 100%; 
+  max-height: 500px;
+  object-fit: cover; /* Mantiene proporciones y rellena el contenedor */
+  border-radius: 10px; /* Opcional: redondear bordes de las imágenes */
+    }
+
+    /* Fondo de relleno opcional para imágenes con espacios */
+    .carousel-inner {
+  background-color: #f8f9fa; /* Fondo gris claro */
+    }
+
+    @media (max-width: 1200px) {
+      .carousel-inner img {
+        max-height: 400px; /* Reducimos la altura máxima en pantallas medianas */
+      }
+    }
+
+    /* Responsivo: ajustar altura en pantallas más pequeñas */
+    @media (max-width: 768px) {
+  .carousel-inner img {
+    height: auto;
+    object-fit: contain;
+  }
+    }
+
+  
+    @media (max-width: 480px) {
+  .carousel-inner img {
+    height: 400px;
+  }
+    }
+
+    /* Personalización de las leyendas */
+.carousel-caption {
+  background: rgba(63, 62, 62, 0.5); /* Fondo oscuro semitransparente */
+  border-radius: 10px;  
+  position: absolute;
+  z-index: 10;
+    }
+
+    /* Personalización de los controles */
+    .carousel-control-prev-icon,
+    .carousel-control-next-icon {
+  background-color: #ff8800; /* Color de fondo llamativo */
+  border-radius: 50%; /* Forma redondeada */
+  width: 3rem;
+  height: 3rem;
+    }
+
+    
+.hero {
+    padding: 2rem;
+    background-color: #f8f9fa;
+    text-align: center;
+  }
+  
+  .hero .highlight{
+    font-size: 1.2rem;
+    color: #ff8800; /* Color llamativo */
+    margin-bottom: 1rem;
+  }
+
+.btn-primary {
+    padding: 0.75rem 1.5rem;
+    background-color: var(--fondo-boton);
+    color: white;
+    border: none;
+    text-decoration: none;
+    border-radius: 25px;
+    font-size: 1.2rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .btn-primary:hover {
+    background-color:var(--fondo-boton-hover);
+    
+  }
+  
+  .btn-primary a {
+    color: white;
+    text-decoration: none;
+  }  
+
+
+.contenido-principal {
+    margin-left: 0; 
+    text-align: center;
+    padding: 20px;
+    transition: margin-left 0.3s ease-in-out;
+    background-color: #fff;
+    }
+    .contenido-expandido {
+    margin-left: 250px; /* Ajustar contenido cuando el menú lateral está visible */
+    }
+
+.btn-secondary {
+    padding: 0.75rem 1.5rem;
+    background-color: var(--fondo-boton);
+    color: white;
+    border: none;
+    border-radius: 25px;
+    font-size: 1.2rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  .btn-secondary:hover {
+    background-color: var(--fondo-boton-hover); 
+    }   
+  
+  .btn-secondary a {
+    color: white;
+    text-decoration: none;
+}
+
+
+
+
 
 .container-banner{
     width: 100%;
@@ -33,4 +167,3 @@
     overflow-x: auto;
     text-wrap: unset;
 }
-

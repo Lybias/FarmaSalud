@@ -41,7 +41,7 @@
     <header class="navbar navbar-expand-lg navbar-dark">
         <div class="container-fluid">
             <a class="navbar-brand" href="/index.html">
-                <img src="assets/img/Logo1.png" width="180px" alt="Logo FarmaSalud">
+                <img src="assets/img/Logo1.png" width="150px" alt="Logo FarmaSalud">
             </a>
     
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
@@ -62,7 +62,101 @@
     </header>
 
 
-    
+    <section>
+        <div id="hero" class="hero text-center">
+            <h1 class="titulo-principal">¡Bienvenidos a Farma & Salud!</h1>
+            <p class="slogan">Disfruta de la mejor atención y productos 100% de calidad. Medicamentos, suplementos y cuidado personal que te brindarán una experiencia integral en salud y bienestar.</p>
+            <p class="highlight"></p>
+            <button class="btn-primary" onclick="location.href='/app/productos/index.html';">Explora Nuestro Catalogo</a></button>
+        </div>
+    </section>
+
+    <!-- Carrusel de Fotos -->
+    <div id="carouselExampleIndicators" class="carousel slide mt-4" data-bs-ride="carousel">
+        <!-- Indicadores -->
+        <div class="carousel-indicators">
+            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active"
+                aria-current="true" aria-label="Slide 1"></button>
+            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"
+                aria-label="Slide 2"></button>
+            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"
+                aria-label="Slide 3"></button>
+        </div>
+        <!-- Contenido del Carrusel -->
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <img src="/assets/img/c1.jpg" class="d-block w-100" alt="Hamburguesa PIRATA">
+                <div class="carousel-caption d-none d-md-block">
+                    <h5>Johnson's Baby </h5>
+                    <p>Solo por Hoy 2x1 en Productos Johnson</p>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <img src="/assets/img/c2.jpg" class="d-block w-100" alt="Hamburguesa BBQ">
+                <div class="carousel-caption d-none d-md-block">
+                    <h5>Vital Vitaminado Pediátrico</h5>
+                    <p>Lata 900 Gr. Precio Especial.</p>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <img src="/assets/img/c3.jpg" class="d-block w-100" alt="Pollo a la Brasa">
+                <div class="carousel-caption d-none d-md-block">
+                    <h5>Multivioticos</h5>
+                    <p>Precio de Remate</p>
+                </div>
+            </div>
+        </div>
+        <!-- Controles del Carrusel -->
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators"
+            data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Anterior</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators"
+            data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Siguiente</span>
+        </button>
+    </div>
+
+    <!-- Contenido principal -->
+<div class="contenido-principal" id="contenido-principal">
+    <h1>ESPECIALISTAS EN BIENESTAR & SALUD</h1>
+    <p>Somos tu primera opción para cuidado de la salud. Ofrecemos medicamentos de calidad, productos para el bienestar y asesoría farmacéutica experta. ¡Experimenta el servicio que te cuida y te respalda!</p>
+    <button class="btn-secondary" onclick="location.href='/app/contactos/index.html'">Contáctenos</a></button>
+</div>
+
+<section id="productos" class="productos text-center">
+    <h2>NUESTROS PRODUCTOS DEL MES</h2>
+    <div class="product-grid">
+        <div class="product-item">
+            <img src="/assets/img/pm1.jpg" alt="pm1">
+            <h3>Elvive Glycolic Gloss</h3>
+            <p>Mejor Acondicionador sellador de brillo.</p>
+        </div>
+        <div class="product-item">
+            <img src="/assets/img/pm2.jpg" alt="Shawarma de langostinos con salsa BBQ">
+            <h3>Nutrisse Tintes</h3>
+            <p>Mascarilla nutricolor permanente.</p>
+        </div>
+        <div class="product-item">
+            <img src="/assets/img/pm3.jpg" alt="Brochetas mixtas de carne y cordero">
+            <h3>Seleccion Garnier</h3>
+            <p>Hair Food Coco exclusivo.</p>
+        </div>
+    </div>
+</section>
+
+  <!-- Sección de Video Promocional -->
+<section id="promocional" class="video-section text-center">
+    <h2 class="video-title">¡Descubre la Experiencia Farma & Salud!</h2>
+    <div class="video-container">
+        <video controls autoplay muted loop class="responsive-video">
+            <source src="assets/video/Promo.mp4" type="video/mp4">
+            Tu navegador no soporta el elemento de video. Actualiza tu navegador.
+        </video>
+    </div>
+</section>
         
 
     <main>

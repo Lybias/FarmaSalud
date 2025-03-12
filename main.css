@@ -1,35 +1,30 @@
 
-body{
+body {
     margin: 0;
-    font-family:'sans-serif','Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana;
+    font-family: 'sans-serif', 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana;
 }
 
-a{
+a {
     text-decoration: none !important;
 }
 
-.navbar-brand img {
-    height: 40px;
-    width: auto;
-    margin-right: 10px;
-  }
 
 /*Nav global */
-nav div{
+nav div {
     display: flex;
     justify-content: space-between;
     align-items: center;
     margin: 8px;
     font-family: var(--font-principal);
-   
+
 }
 
 nav div span {
-    display: inline-flex; 
-    align-items: center; 
+    display: inline-flex;
+    align-items: center;
 }
 
-nav div span a{
+nav div span a {
     display: inline-flex;
     align-items: center;
     background-color: #25d366;
@@ -41,28 +36,36 @@ nav div span a{
     vertical-align: middle;
 }
 
-nav div span a img{
+nav div span a img {
     height: 18px;
     width: 18px;
 }
 
-nav div span a:hover{
-    background-color: #128310 !important; 
+nav div span a:hover {
+    background-color: #128310 !important;
 }
 
+.navbar-brand img {
+    height: 40px;
+    width: auto;
+    margin-right: 10px;
+  } 
+
+
+
 /*Header global */
-header{
+header {
     background-color: var(--color-fondo-principal);
     display: flex;
     padding: 15px;
-    
+
 }
 
-header nav{
+header nav {
     width: 100%;
 }
 
-header nav ul{
+header nav ul {
     display: flex;
     list-style: none;
     justify-content: center;
@@ -72,34 +75,34 @@ header nav ul{
     gap: 15px;
     margin: 0;
     padding: 0;
-    
 
-  
+
+
 }
 
-header nav ul a{
+header nav ul a {
     color: white;
     text-decoration: none;
     padding: 8px;
     border-radius: 5px;
     transition: background-color 0.3s ease-in-out;
-    
-    
+
+
 }
 
-header nav ul a:hover{
-    background-color:var(--color-fondo-secundario) ;
+header nav ul a:hover {
+    background-color: var(--color-fondo-secundario);
     color: rgb(184, 255, 17);
 }
 
-main{
+main {
     padding: 10px;
     width: 100%;
     display: flex;
     justify-content: center;
 }
 
-.main-container{
+.main-container {
     max-width: 1080px;
-    
+
 }
