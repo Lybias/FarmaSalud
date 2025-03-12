@@ -130,6 +130,85 @@
     text-decoration: none;
 }
 
+.productos {
+    padding: 2rem 1rem;
+    background-color: #f8f9fa;
+  }
+  
+  .product-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 1rem;
+    justify-items: center;
+  }
+  
+  .product-item img {
+    width: auto;
+    height: auto;
+    object-fit: cover;
+    border-radius: 10px;
+  }
+  
+  .product-item h3 {
+    font-size: 1.5rem;
+    margin-top: 1rem;
+  }
+  
+  .product-item p {
+    color: #666;
+  }
+
+.video-section {
+    background-color: #f8f9fa; /* Fondo claro para diferenciarlo */
+    padding: 40px 20px;
+  }
+
+  .video-title {
+    font-size: 2rem;
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 20px;
+  }
+
+  .video-container {
+    position: relative;
+    max-width: 900px; /* Ancho máximo del video */
+    margin: 0 auto; /* Centrar el video */
+  }
+
+  .responsive-video {
+    width: 100%; /* Ajustar el ancho del video al contenedor */
+    height: auto; /* Mantener proporción */
+    border-radius: 10px; /* Bordes redondeados para diseño */
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2); /* Sombra elegante */
+  }
+
+.promociones .card {
+    border-radius: 15px; /* Bordes redondeados */
+    transition: transform 0.3s, box-shadow 0.3s;
+  }
+
+  .promociones .card:hover {
+    transform: translateY(-5px); /* Efecto al pasar el mouse */
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2); /* Sombra más intensa */
+  }
+
+  .promociones .btn {
+    border-radius: 20px; /* Botón redondeado */
+    text-transform: uppercase;
+    background-color: #ff8800;
+    color: white;
+    
+  }
+
+  .promociones h2 {
+    text-transform: uppercase;
+    letter-spacing: 2px;
+  }
+
+  .promociones .card-title {
+    font-size: 1.25rem;
+  }
 
 
 

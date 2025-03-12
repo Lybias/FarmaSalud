@@ -58,6 +58,7 @@ header {
     background-color: var(--color-fondo-principal);
     display: flex;
     padding: 15px;
+    font-family: var(--font-principal);
 
 }
 
@@ -75,9 +76,6 @@ header nav ul {
     gap: 15px;
     margin: 0;
     padding: 0;
-
-
-
 }
 
 header nav ul a {
