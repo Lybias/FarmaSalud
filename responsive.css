@@ -1,0 +1,178 @@
+/* Reglas generales de comportamiento por pantalla */
+
+/* 1. Teléfonos móviles (pantallas <768px) */
+@media (max-width: 768px) {
+    html {
+        font-size: 14px;
+    }
+
+    body {
+        padding: 0 10px;
+        font-size: 0.9rem;
+    }
+
+    section, main, footer {
+        padding: 1rem;
+    }
+
+    img, video {
+        max-width: 100%;
+        height: auto;
+    }
+
+    h1 {
+        font-size: 1.8rem;
+    }
+
+    h2 {
+        font-size: 1.5rem;
+    }
+
+    h3 {
+        font-size: 1.2rem;
+    }
+
+    p {
+        font-size: 0.95rem;
+    }
+
+    button, .btn {
+        font-size: 1rem;
+        padding: 0.6rem 1.2rem;
+    }
+}
+
+
+/* 2. Tablets y laptops pequeños (768px - 992px) */
+@media (max-width: 992px) {
+    html {
+        font-size: 15px;
+    }
+
+    body {
+        font-size: 1rem;
+    }
+
+    section, main {
+        padding: 1.5rem;
+    }
+
+    h1 {
+        font-size: 2rem;
+    }
+
+    h2 {
+        font-size: 1.7rem;
+    }
+
+    h3 {
+        font-size: 1.3rem;
+    }
+
+    .container, .main-container {
+        width: 95%;
+        margin: 0 auto;
+    }
+}
+
+
+/* 3. Escritorio mediano (992px - 1200px) */
+@media (max-width: 1200px) {
+    html {
+        font-size: 16px;
+    }
+
+    .container, .main-container {
+        max-width: 95%;
+    }
+
+    body {
+        font-size: 1.05rem;
+    }
+}
+
+
+/* 4. Escritorio grande (1200px en adelante) */
+@media (min-width: 1200px) {
+    html {
+        font-size: 17px;
+    }
+
+    .container, .main-container {
+        max-width: 1140px;
+        margin: auto;
+    }
+}
+
+/* 5. Navbar responsive */
+@media (max-width: 768px) {
+    nav > div {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        gap: 0.5rem;
+    }
+
+    nav div span {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    nav div span a {
+        margin-top: 0.5rem;
+    }
+
+    nav div span,
+    nav div div {
+        width: 100%;
+        justify-content: center;
+    }
+
+    nav img {
+        margin-right: 5px;
+    }
+
+    .navbar-toggler {
+        margin-left: auto;
+    }
+    nav div span a.btn-wsp {
+        margin-left: 2rem; 
+    }
+
+    
+}
+
+
+
+
+/* 6. footer responsive */
+
+@media (max-width: 768px) {
+    footer .container .row {
+        display: flex;
+        flex-direction: column;
+        gap: 2rem;
+        text-align: center;
+    }
+
+    footer .col-md-4 {
+        width: 100%;
+    }
+
+    footer .col-md-4 img {
+        margin: 0 auto;
+    }
+
+    footer .list-unstyled {
+        padding-left: 0;
+    }
+
+    footer .btn {
+        justify-content: center;
+    }
+
+    footer .text-uppercase {
+        margin-top: 1rem;
+    }
+}

@@ -1,24 +1,28 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    
-    <link rel="stylesheet" href="/variables.css">
-    <link rel="stylesheet" href="/main.css">
-    <link rel="stylesheet" href="/index.css">
+
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
-    
+    <link rel="stylesheet" href="/variables.css">
+    <link rel="stylesheet" href="/main.css">
+    <link rel="stylesheet" href="/index.css">
+    <link rel="stylesheet" href="/app/productos/productos.css">
+    <link rel="stylesheet" href="/responsive.css">
+
     <title>FarmaSalud | Catalogo</title>
 </head>
+
 <body>
 
     <nav>
         <div>
             <span>
-                Bienvenido a F A R M A & S A L U D |
+                Bienvenido a F A R M A & S A L U D&nbsp;&nbsp;
                 <a href="https://wa.me/51970863226?text=¡Hola!%20Quisiera%20más%20información%20sobre%20Farma%20Salud."
                     target="_blank">
                     <img src="/assets/img/Wsp.svg" alt="WhatsApp">
@@ -37,18 +41,18 @@
             </div>
         </div>
     </nav>
-    
+
     <header class="navbar navbar-expand-lg navbar-dark">
         <div class="container-fluid">
             <a class="navbar-brand" href="/index.html">
                 <img src="/assets/img/Logo1.png" width="180px" alt="Logo FarmaSalud">
             </a>
-    
+
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
                 aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
-    
+
             <div class="collapse navbar-collapse" id="navbarNav">
                 <ul class="navbar-nav">
                     <li class="nav-item"><a class="nav-link" href="/">Inicio</a></li>
@@ -57,78 +61,66 @@
                     <li class="nav-item"><a class="nav-link" href="/app/contactos">Contáctenos</a></li>
                 </ul>
             </div>
-    
+
         </div>
     </header>
-    
-    
-    <main>
-    
-        <div class="main-container">
-            <h2>Estos productos tenemos en stock</h2>
+
+    <div class="banner-productos">
+        <img src="/assets/img/bannerP1.png" alt="Banner FarmaSalud" class="img-fluid w-100">
+    </div>
+
+    <div class="Subtitulo">
+        <h2>Explora por Categorías</h2>
+        <p>Selecciona una categoría para ver los productos disponibles</p>
+    </div>
+
+    <section class="categorias-farmasalud container">
+        <div class="row justify-content-center text-center" id="contenedor-categorias">
+            <!-- Aquí se cargarán las categorías -->
         </div>
-    
-        <div class="main-container">
-    
-    
-            <div class="categoria-container">
-    
-                <div class="categoria-card">
-                    <img src="#" alt="banner1" height="100%" width="200px">
-                    <p></p>
-    
-                </div>
-    
-                <div class="categoria-card">
-                    <img src="#" alt="banner1" height="100%" width="200px">
-                    <p></p>
-    
-                </div>
-    
-                <div class="categoria-card">
-                    <img src="#" alt="banner1" height="100%" width="200px">
-                    <p></p>
-    
-                </div>
-    
-                <div class="categoria-card">
-                    <img src="#" alt="banner1" height="100%" width="200px">
-                    <p></p>
-    
-                </div>
-    
-                <div class="categoria-card">
-                    <img src="#" alt="banner1" height="100%" width="200px">
-                    <p></p>
-    
-                </div>
-    
-                <div class="categoria-card">
-                    <img src="#" alt="banner1" height="100%" width="200px">
-                    <p></p>
-    
-                </div>
-    
-                <div class="categoria-card">
-                    <img src="#" alt="banner1" height="100%" width="200px">
-                    <p></p>
-    
-                </div>
-    
-                <div class="categoria-card">
-                    <img src="#" alt="banner1" height="100%" width="200px">
-                    <p></p>
-    
-                </div>
+    </section>
+
+    <div class="Subtitulo">
+        <h2>Nuestros Productos</h2>
+        
+    </div>
+
+    <main>
+
+        <div class="container mt-4">
+            <div class="row" id="contenedor-productos">
             </div>
         </div>
-    
-    
-    </main>
-    
 
+        <!--<div class="main-container">
+            <div class="categoria-container">
+
+                <div class="categoria-card">
+                    <img src="#" alt="banner1" height="100%" width="200px">
+                    <p></p>
+
+                </div>
+                <div class="categoria-card">
+                    <img src="#" alt="banner1" height="100%" width="200px">
+                    <p></p>
+
+                </div>
+                <div class="categoria-card">
+                    <img src="#" alt="banner1" height="100%" width="200px">
+                    <p></p>
+
+                </div>
+                              
+            </div>
+        </div>-->
+    </main>
+
+    <script src="/app/productos/productos.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
-    
+
+
+
+
     <footer class="bg-dark text-white pt-4">
         <div class="container">
             <div class="row">
@@ -182,4 +174,5 @@
         </div>
     </footer>
 </body>
+
 </html>
