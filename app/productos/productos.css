@@ -58,7 +58,7 @@
 }
 
 .categoria-card p {
-    font-size: 0.9rem;s
+    font-size: 0.9rem;
     margin: 0.5rem 0;
     font-weight: 600;
 }
@@ -68,7 +68,7 @@
     border-radius: 10px;
     overflow: hidden;
     box-shadow: 0 4px 10px rgba(0, 128, 0, 0.12);
-    transition: transform 0.3s;s
+    transition: transform 0.3s;
     background-color: rgb(37, 28, 137);
     height: 100%;
 }
