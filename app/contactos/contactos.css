@@ -25,7 +25,7 @@
     background-color: var(--fondo-boton-hover);
 }
 
-/* Personaliza los headers de las iframes de Google Maps */
+/* iframes de Google Maps */
 .contact-section .card-header {
     background-color: #0bad1e;
     /* Color oscuro para el header */

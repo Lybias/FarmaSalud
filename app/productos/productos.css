@@ -5,7 +5,7 @@
 }
 
 .Subtitulo h2 {
-    font-size: 2.5rem;
+    font-size: 2 rem;
     font-weight: 800;
     color: #0a7203;
     text-transform: uppercase;
@@ -42,7 +42,7 @@
     overflow: hidden;
     transition: transform 0.3s ease;
     box-shadow: 0 4px 8px rgba(2, 103, 2, 0.1); 
-    background-color: rgb(255, 255, 255);
+    background-color: rgb(115, 255, 143);
     cursor: pointer;
 }
 
@@ -69,7 +69,7 @@
     overflow: hidden;
     box-shadow: 0 4px 10px rgba(0, 128, 0, 0.12);
     transition: transform 0.3s;
-    background-color: rgb(37, 28, 137);
+    background-color: rgb(109, 242, 149);
     height: 100%;
 }
 
@@ -81,25 +81,26 @@
 .card-producto .card-img-top {
     height: 220px;
     object-fit: contain;
-    padding: 1rem;
+    padding: 0.5rem;
 }
 
 .card-producto h3 {
     font-size: 1.1rem;
-    font-weight: 600;
+    font-weight: 200;
     color: #333;
     margin-bottom: 0.5rem;
 }
 
 .card-producto p {
     font-size: 0.85rem;
-    margin-bottom: 0.2rem;
-    color: #555;
+    margin-bottom: 0.1rem;
+    color: #006906;
+    
 }
 
 .card-producto .precio {
     font-weight: 700;
-    color: #008000; /* verde marca */
+    color: #035e03; /* verde marca */
     font-size: 1rem;
-    margin-top: 0.5rem;
+    margin-top: 0.2rem;
 }

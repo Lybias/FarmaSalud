@@ -66,6 +66,12 @@ async function cargarCategorias() {
 
     } catch (error) {
         console.error("Error al cargar categorías:", error);
+
+    // Mostrar mensaje en pantalla
+    const mensajeError = document.getElementById("mensajeErrorCategorias");
+    if (mensajeError) {
+        mensajeError.textContent = "⚠️ No se pudieron cargar las categorías. Por favor, verifica tu conexión o intenta más tarde.";
+    }
     }
 }
 

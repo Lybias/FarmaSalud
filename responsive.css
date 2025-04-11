@@ -1,9 +1,9 @@
-/* Reglas generales de comportamiento por pantalla */
+
 
 /* 1. Teléfonos móviles (pantallas <768px) */
 @media (max-width: 768px) {
     html {
-        font-size: 14px;
+        font-size: 13px;
     }
 
     body {
@@ -154,6 +154,7 @@
         flex-direction: column;
         gap: 2rem;
         text-align: center;
+        font-size: 0.8rem;
     }
 
     footer .col-md-4 {
@@ -176,3 +177,9 @@
         margin-top: 1rem;
     }
 }
+
+@media screen and (max-width: 480px) {
+    footer {
+      font-size: 0.8rem;
+    }
+  }
