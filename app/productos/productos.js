@@ -9,20 +9,9 @@ const selectCategoria = document.getElementById("select-categoria");
 let productos = [];
 let categorias = [];
 
-document.addEventListener("DOMContentLoaded", async () => {
-    try {
-        await cargarCategorias();
-        await cargarProductos();
-        mostrarProductos(productos);
-    } catch (error) {
-        console.error("Error en la carga inicial:", error);
-    }
-});
 
+// CATEGORÍAS
 
-// ============================
-// 1. CATEGORÍAS
-// ============================
 
 async function cargarCategorias() {
     try {
@@ -79,9 +68,9 @@ async function cargarCategorias() {
 }
 
 
-// ============================
+
 // 2. FILTRO POR CATEGORÍA
-// ============================
+
 
 function filtrarPorCategoriaId(idCategoria) {
     const filtrados = productos.filter(p => p.categoriaId == idCategoria);
@@ -89,9 +78,9 @@ function filtrarPorCategoriaId(idCategoria) {
 }
 
 
-// ============================
+
 // 3. PRODUCTOS
-// ============================
+
 
 async function cargarProductos() {
     try {
@@ -132,3 +121,13 @@ function mostrarProductos(lista) {
         contenedorProductos.appendChild(div);
     });
 }
+
+document.addEventListener("DOMContentLoaded", async () => {
+    try {
+        await cargarCategorias();
+        await cargarProductos();
+        mostrarProductos(productos);
+    } catch (error) {
+        console.error("Error en la carga inicial:", error);
+    }
+});
