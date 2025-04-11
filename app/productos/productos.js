@@ -1,10 +1,10 @@
 
 const urlBase = "http://localhost:3000";
 
+const contenedorCategorias = document.getElementById("contenedor-categorias");
 const contenedorProductos = document.getElementById("contenedor-productos");
 const inputBusqueda = document.getElementById("input-busqueda");
 const selectCategoria = document.getElementById("select-categoria");
-const contenedorCategorias = document.getElementById("contenedor-categorias");
 
 let productos = [];
 let categorias = [];
@@ -19,13 +19,18 @@ document.addEventListener("DOMContentLoaded", async () => {
     }
 });
 
+
+// ============================
+// 1. CATEGORÍAS
+// ============================
+
 async function cargarCategorias() {
     try {
         const respuesta = await fetch(`${urlBase}/categorias`);
         categorias = await respuesta.json();
         console.log("Categorías cargadas:", categorias);
 
-        // Llenar select (si existe)
+        // Llenar select
         if (selectCategoria) {
             categorias.forEach(categoria => {
                 const option = document.createElement("option");
@@ -40,16 +45,16 @@ async function cargarCategorias() {
             contenedorCategorias.innerHTML = "";
             categorias.forEach(categoria => {
                 const col = document.createElement("div");
-                col.classList.add("col-6", "col-md-4", "col-lg-2");
+                col.classList.add("categoria-col");
 
                 const card = document.createElement("div");
-                card.classList.add("card", "h-100", "shadow-sm", "border-0", "categoria-card");
+                card.classList.add("categoria-card");
                 card.dataset.categoriaId = categoria.id;
 
                 card.innerHTML = `
-                    <img src="${categoria.imagen}" class="card-img-top" alt="${categoria.nombre}" style="object-fit: cover; height: 100px;">
-                    <div class="card-body p-2 text-center">
-                        <h6 class="card-title mb-0">${categoria.nombre}</h6>
+                    <img src="${categoria.imagen}" alt="${categoria.nombre}">
+                    <div class="categoria-info">
+                        <h6>${categoria.nombre}</h6>
                     </div>
                 `;
 
@@ -66,14 +71,27 @@ async function cargarCategorias() {
 
     } catch (error) {
         console.error("Error al cargar categorías:", error);
-
-    // Mostrar mensaje en pantalla
-    const mensajeError = document.getElementById("mensajeErrorCategorias");
-    if (mensajeError) {
-        mensajeError.textContent = "⚠️ No se pudieron cargar las categorías. Por favor, verifica tu conexión o intenta más tarde.";
-    }
+        const mensajeError = document.getElementById("mensajeErrorCategorias");
+        if (mensajeError) {
+            mensajeError.textContent = "⚠️ No se pudieron cargar las categorías.";
+        }
     }
 }
+
+
+// ============================
+// 2. FILTRO POR CATEGORÍA
+// ============================
+
+function filtrarPorCategoriaId(idCategoria) {
+    const filtrados = productos.filter(p => p.categoriaId == idCategoria);
+    mostrarProductos(filtrados);
+}
+
+
+// ============================
+// 3. PRODUCTOS
+// ============================
 
 async function cargarProductos() {
     try {
@@ -97,15 +115,15 @@ function mostrarProductos(lista) {
 
     lista.forEach(producto => {
         const div = document.createElement("div");
-        div.classList.add("col-md-4", "mb-4");
+        div.classList.add("producto-col");
 
         div.innerHTML = `
-            <div class="card card-producto h-100 shadow-sm">
-                <img src="${producto.imagen}" class="card-img-top" alt="${producto.nombre}">
-                <div class="card-body">
+            <div class="producto-card">
+                <img src="${producto.imagen}" alt="${producto.nombre}">
+                <div class="producto-info">
                     <h3>${producto.nombre}</h3>
-                    <p>Código: ${producto.codigo}</p>
-                    <p>Stock: ${producto.stock}</p>
+                    <p class="codigo">Código: ${producto.codigo}</p>
+                    <p class="stock">Stock: ${producto.stock}</p>
                     <p class="precio">Precio: S/ ${producto.precio.toFixed(2)}</p>
                 </div>
             </div>
@@ -114,10 +132,3 @@ function mostrarProductos(lista) {
         contenedorProductos.appendChild(div);
     });
 }
-
-function filtrarPorCategoriaId(idCategoria) {
-    const filtrados = productos.filter(p => p.categoriaId == idCategoria);
-    mostrarProductos(filtrados);
-}
-
-
